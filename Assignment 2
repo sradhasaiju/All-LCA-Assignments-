@@ -1,1 +1,25 @@
+#find the largest no of the three number
 
+#taking three number as input from the user
+a=int(input('Enter a number :'))
+b=int(input('Enter a number :'))
+c=int(input('Enter a number :'))
+
+#checking if a is greater than both b and c
+if a>b and a>c:
+    print('The largest number is',a)
+
+#checking if c is greater than both b and a
+elif c>b and c>a:
+    print('The largest number is',c)
+
+#checking if b is greater than both c and a
+elif b>c and b>a:
+    print('The largest number is',b)
+
+#output:
+Enter a number : 56
+Enter a number : 45
+Enter a number : 74
+
+The largest number is 74
