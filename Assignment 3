@@ -1,1 +1,18 @@
+#find whether the triangle is right angled or not
+a=int(input('Enter the length of the first side:'))
+b=int(input('Enter the length of the second side:'))
+c=int(input('Enter the length of the third side:'))
+if a*a==b*b+c*c:
+    print("It is right angled triangle")
+elif c*c==b*b+a*a:
+    print("It is right angled triangle")
+elif b*b==a*a+c*c:
+     print("It is right angled triangle")
+else:
+    print("It is not a right angled triangle")
 
+#output
+Enter the length of the first side:3
+Enter the length of the second side:4
+Enter the length of the third side:5
+It is right angled triangle
