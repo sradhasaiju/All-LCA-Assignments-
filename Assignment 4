@@ -1,5 +1,5 @@
+#matrix calculator
 import numpy as np
-
 def sub(x, y):
     return x - y
 
