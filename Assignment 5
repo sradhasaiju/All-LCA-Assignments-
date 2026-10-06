@@ -1,14 +1,11 @@
-#checks the strength of the password
+#check whether string contains only a-z, A-Z, 0-9
 import re
-password = input("Enter password: ")
-if (len(password) >= 8 and
-    re.search(r'[a-z]', password) and
-    re.search(r'[A-Z]', password) and
-    re.search(r'[0-9]', password) and
-    re.search(r'[^a-zA-Z0-9]', password)):
-    print("Strong Password")
+s=input("Enter string: ")
+if re.fullmatch(r'[a-zA-Z0-9]+', s):
+    print("Valid String")
 else:
-    print("Weak Password")
+    print("Invalid String")
+
 #output
-Enter password: hello
-Weak Password
+Enter string: Hello123
+Valid String
